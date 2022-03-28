@@ -28,13 +28,13 @@ public class Seance {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Temporal(TemporalType.DATE)
-	@Column(columnDefinition="Date DEFAULT CURRENT_TIMESTAMP",insertable = false)
+	@Column(columnDefinition="Date DEFAULT CURRENT_TIMESTAMP",insertable = false, updatable = false)
 	private Date date;
-	private String titre;
-	private String type;
+	//private String titre;
+	//private String type;
 	private String horaire;
 	private double duree;
-	private String contenu;
+	//private String contenu;
 	
 	@ManyToOne
 	private Classe classe;

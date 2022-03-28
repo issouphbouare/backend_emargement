@@ -25,6 +25,8 @@ public class Payer {
 	private Long id;
 	@Column(columnDefinition="Date DEFAULT CURRENT_TIMESTAMP",insertable = false)
 	private Date date;
+	private int moisPayer;
+	private int anneePayer;
 	@ManyToOne
 	private Professeur professeur;
 	private double honoraire;

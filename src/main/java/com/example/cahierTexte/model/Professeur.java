@@ -38,6 +38,7 @@ public class Professeur {
 	private int tel;
 	private  String password;
 	private String role;
+	private boolean notAccess;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "professeur")
